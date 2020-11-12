@@ -12,7 +12,7 @@
 			$('#toggleError').html('[-]');
 	<?php } ?>
 		$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
+		$('[data-toggle="tooltip"]').tooltip({container: 'body', placement: "right"})
 		})
 	</script>
 	<script type="text/javascript">
