@@ -4,5 +4,5 @@ Vajalik PHP5+
 
 Valikuline: LDAP PHP moodul, kui soov kasutada AD sisselogimist.
 
-Paigaldamiseks alla laadida failid ning lisada DHX serverisse.
+Paigaldus: lae alla rakenduse failid ning paigalda DHX serverisse.
 Seadistada config väärtused.
