@@ -6,3 +6,14 @@ Valikuline: LDAP PHP moodul, kui soov kasutada AD sisselogimist.
 
 Paigaldus: lae alla rakenduse failid ning paigalda DHX serverisse.
 Seadistada config väärtused.
+
+
+## Funktsioonid
+* LDAP või tavaline login
+* Aadressi raamatu kontroll (tühjad väärtused + dupleeritud kirjed).
+* Vigaste dokumentide saatmise nimekiri
+* Saatmisel olevate dokumentide nimekiri
+* Saadetud dokumentide nimekiri
+* Vastuvõetud dokumentide nimekiri
+* Esindatud asutuste nimekiri
+* Ümbriku sisu vaatamine ja failide allalaadimine
