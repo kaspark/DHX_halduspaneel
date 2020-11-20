@@ -1,4 +1,4 @@
-# DHX_halduspaneel
+# DHX halduspaneel
 
 Vajalik PHP5+
 
