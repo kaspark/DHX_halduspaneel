@@ -1,5 +1,7 @@
 <?php
 
+ini_set("display_errors",1);
+
 session_start();
 if(@$_SESSION['auth']!=1) header('Location: login.php');
 require('conf.php');
@@ -34,7 +36,7 @@ $getMainInstitute = searchArray($allTheInstitutes, 'nimetus', $inst_list[$inst][
 
 ?>
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom">
-        <h1 class="h2"><?php echo $inst_list[$inst][0]; ?> [<?php if(!empty($getMainInstitute[0])){echo $getMainInstitute[0]["registrikood"];} ?>]</h1>
+        <h1 class="h2"><?php echo $inst_list[$inst][0]; ?> [<?php if(!empty($getMainInstitute[0])){echo $getMainInstitute[0]["member_class"];} ?>:<?php if(!empty($getMainInstitute[0])){echo $getMainInstitute[0]["registrikood"];} ?>:<?php if(!empty($getMainInstitute[0])){echo $getMainInstitute[0]["subsystem"];} ?>]</h1>
       </div>
 	  
 	  <?php
@@ -126,7 +128,7 @@ $getMainInstitute = searchArray($allTheInstitutes, 'nimetus', $inst_list[$inst][
         AND (t.staatus_id = 103 OR v.staatus_id = 103) order by v.saatmise_algus DESC limit ?;", [$errLimit])->fetchAll();
 	?>
 	<div class="table-responsive">
-        <table class="table table-striped table-sm table-sm-dhx">
+        <table class="table table-striped table-sm table-sm-dhx" style="padding:-200px;">
           <thead>
             <tr>
               <th>saatja</th>
